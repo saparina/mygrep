@@ -1,0 +1,42 @@
+digraph MyPlan {
+  node [shape="rectangle"];
+
+  "H"
+  "TERM"
+  "ITER"
+  "PLUS"
+  "REP"
+  "LPAR"
+  "RPAR"
+  "NUM"
+  "ERR"
+  "S"
+
+  "H"->"H"[label="terms += c"]
+  "H"->"H"[label="gc();"]
+  "H"->"H"[label="c = '\' "]
+  "H"->"ERR"[label="c = '?', c = '[',c = ']', c = '-'"]
+  "H"->"S"[label="c = 0 && terms = \"\" "]
+  "H"->"TERM"->"S"[label="c = 0 && term != \"\" "]
+  "TERM"->"H"[label="add()"]
+  "H"->"ITER"[label="c = '*'"]
+  "ITER"->"H"[label="term = \"\"; add();"]
+  "ITER"->"TERM"[label="term != \"\""]
+  "H"->"PLUS"[label="c = '+'"]
+  "PLUS"->"H"[label="term = \"\"; add();"]
+  "PLUS"->"TERM"[label="term != \"\";"]
+  "PLUS"->"ERR"[label="c != '?'"]
+  "H"->"LPAR"[label="c = '('"]
+  "LPAR"->"H"[label="add();"]
+  "H"->"RPAR"[label="c = ')'"]
+  "RPAR"->"H"[label="add();"]
+  "H"->"REP"[label="c = '{'"]
+  "REP"->"ERR"[label="c != ','"]
+  "REP"->"NUM"[label="c = \"\" "]
+  "NUM"->"ERR"[label="c != '}'"]
+  "NUM"->"NUM"[label="isdigit(c)"]
+  "NUM"->"H"[label="add()"]
+  "REP"->"TERM"[label="c != \"\" "]
+
+
+}

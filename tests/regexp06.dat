@@ -1,0 +1,18 @@
+"bn{,0" 
+Bad regular expression: No escaping special characters
+"bn{,-12}" 
+Bad regular expression: No escaping special characters
+"bn((kl(l)" 
+ERROR on lexeme
+LEX_FIN
+"bn((kl(l))))))" 
+ERROR on lexeme
+LEX_RPAREN
+"*hj" 
+ERROR on lexeme
+LEX_ITER
+"hj+" 
+Bad regular expression: No escaping special characters
+"hj[]" 
+Bad regular expression: No escaping special characters
+

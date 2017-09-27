@@ -1,0 +1,79 @@
+\hypertarget{lex__analyzer_8h}{}\section{lex\+\_\+analyzer.\+h File Reference}
+\label{lex__analyzer_8h}\index{lex\+\_\+analyzer.\+h@{lex\+\_\+analyzer.\+h}}
+
+
+The header with description of lexical analyzer class.  
+
+
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$stdexcept$>$}\\*
+Include dependency graph for lex\+\_\+analyzer.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_lex}{Lex}
+\begin{DoxyCompactList}\small\item\em Lexeme with all information. \end{DoxyCompactList}\item 
+class \hyperlink{class_lex__analyzer}{Lex\+\_\+analyzer}
+\begin{DoxyCompactList}\small\item\em Lexical analyzer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27d}{type\+\_\+of\+\_\+lex} \{ \\*
+\hyperlink{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27da292df6cba995f99f45847b05772ed297}{L\+E\+X\+\_\+\+N\+U\+LL}, 
+\hyperlink{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27da3d64bc262b48c65f577ac77762571358}{L\+E\+X\+\_\+\+T\+E\+RM}, 
+\hyperlink{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27da475ed9ff83b41c7f095b16130e0b64b8}{L\+E\+X\+\_\+\+OR}, 
+\hyperlink{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27dacbd65e29c64bfd333072b2c4bd72df6f}{L\+E\+X\+\_\+\+I\+T\+ER}, 
+\\*
+\hyperlink{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27da99e7cb5b17a387d7c371be6529207a33}{L\+E\+X\+\_\+\+L\+P\+A\+R\+EN}, 
+\hyperlink{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27daedb28502a49b87237b18b13e2f131954}{L\+E\+X\+\_\+\+R\+P\+A\+R\+EN}, 
+\hyperlink{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27da8728f290f3c402de5b10658369ff8b12}{L\+E\+X\+\_\+\+R\+E\+P\+E\+AT}, 
+\hyperlink{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27da3171f1f2958f54559f2570690b951b74}{L\+E\+X\+\_\+\+L\+A\+Z\+Y\+\_\+\+C\+O\+PY}, 
+\\*
+\hyperlink{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27daf0879f9dc8d6e407df499ea3ecb1814f}{L\+E\+X\+\_\+\+C\+O\+N\+C\+AT}, 
+\hyperlink{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27dab9722c0c15b2be4097380b5b72bde41a}{L\+E\+X\+\_\+\+F\+IN}
+ \}\begin{DoxyCompactList}\small\item\em Enumeration of diffrent types of lexems. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The header with description of lexical analyzer class. 
+
+The file contains the description of lexical analyzer class, which tokenized regular expression and controled using bad symbols or same diffrent basic errors 
+
+\subsection{Enumeration Type Documentation}
+\index{lex\+\_\+analyzer.\+h@{lex\+\_\+analyzer.\+h}!type\+\_\+of\+\_\+lex@{type\+\_\+of\+\_\+lex}}
+\index{type\+\_\+of\+\_\+lex@{type\+\_\+of\+\_\+lex}!lex\+\_\+analyzer.\+h@{lex\+\_\+analyzer.\+h}}
+\subsubsection[{\texorpdfstring{type\+\_\+of\+\_\+lex}{type_of_lex}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf type\+\_\+of\+\_\+lex}}\hypertarget{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27d}{}\label{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27d}
+
+
+Enumeration of diffrent types of lexems. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{L\+E\+X\+\_\+\+N\+U\+LL@{L\+E\+X\+\_\+\+N\+U\+LL}!lex\+\_\+analyzer.\+h@{lex\+\_\+analyzer.\+h}}\index{lex\+\_\+analyzer.\+h@{lex\+\_\+analyzer.\+h}!L\+E\+X\+\_\+\+N\+U\+LL@{L\+E\+X\+\_\+\+N\+U\+LL}}\item[{\em 
+L\+E\+X\+\_\+\+N\+U\+LL\hypertarget{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27da292df6cba995f99f45847b05772ed297}{}\label{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27da292df6cba995f99f45847b05772ed297}
+}]N\+U\+LL lexem. \index{L\+E\+X\+\_\+\+T\+E\+RM@{L\+E\+X\+\_\+\+T\+E\+RM}!lex\+\_\+analyzer.\+h@{lex\+\_\+analyzer.\+h}}\index{lex\+\_\+analyzer.\+h@{lex\+\_\+analyzer.\+h}!L\+E\+X\+\_\+\+T\+E\+RM@{L\+E\+X\+\_\+\+T\+E\+RM}}\item[{\em 
+L\+E\+X\+\_\+\+T\+E\+RM\hypertarget{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27da3d64bc262b48c65f577ac77762571358}{}\label{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27da3d64bc262b48c65f577ac77762571358}
+}]Terminals. \index{L\+E\+X\+\_\+\+OR@{L\+E\+X\+\_\+\+OR}!lex\+\_\+analyzer.\+h@{lex\+\_\+analyzer.\+h}}\index{lex\+\_\+analyzer.\+h@{lex\+\_\+analyzer.\+h}!L\+E\+X\+\_\+\+OR@{L\+E\+X\+\_\+\+OR}}\item[{\em 
+L\+E\+X\+\_\+\+OR\hypertarget{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27da475ed9ff83b41c7f095b16130e0b64b8}{}\label{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27da475ed9ff83b41c7f095b16130e0b64b8}
+}]Lexeme \textquotesingle{}$\vert$\textquotesingle{}. \index{L\+E\+X\+\_\+\+I\+T\+ER@{L\+E\+X\+\_\+\+I\+T\+ER}!lex\+\_\+analyzer.\+h@{lex\+\_\+analyzer.\+h}}\index{lex\+\_\+analyzer.\+h@{lex\+\_\+analyzer.\+h}!L\+E\+X\+\_\+\+I\+T\+ER@{L\+E\+X\+\_\+\+I\+T\+ER}}\item[{\em 
+L\+E\+X\+\_\+\+I\+T\+ER\hypertarget{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27dacbd65e29c64bfd333072b2c4bd72df6f}{}\label{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27dacbd65e29c64bfd333072b2c4bd72df6f}
+}]Lexeme \textquotesingle{}$\ast$\textquotesingle{}. \index{L\+E\+X\+\_\+\+L\+P\+A\+R\+EN@{L\+E\+X\+\_\+\+L\+P\+A\+R\+EN}!lex\+\_\+analyzer.\+h@{lex\+\_\+analyzer.\+h}}\index{lex\+\_\+analyzer.\+h@{lex\+\_\+analyzer.\+h}!L\+E\+X\+\_\+\+L\+P\+A\+R\+EN@{L\+E\+X\+\_\+\+L\+P\+A\+R\+EN}}\item[{\em 
+L\+E\+X\+\_\+\+L\+P\+A\+R\+EN\hypertarget{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27da99e7cb5b17a387d7c371be6529207a33}{}\label{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27da99e7cb5b17a387d7c371be6529207a33}
+}]Lexeme \textquotesingle{}(\textquotesingle{}. \index{L\+E\+X\+\_\+\+R\+P\+A\+R\+EN@{L\+E\+X\+\_\+\+R\+P\+A\+R\+EN}!lex\+\_\+analyzer.\+h@{lex\+\_\+analyzer.\+h}}\index{lex\+\_\+analyzer.\+h@{lex\+\_\+analyzer.\+h}!L\+E\+X\+\_\+\+R\+P\+A\+R\+EN@{L\+E\+X\+\_\+\+R\+P\+A\+R\+EN}}\item[{\em 
+L\+E\+X\+\_\+\+R\+P\+A\+R\+EN\hypertarget{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27daedb28502a49b87237b18b13e2f131954}{}\label{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27daedb28502a49b87237b18b13e2f131954}
+}]Lexeme \textquotesingle{})\textquotesingle{}. \index{L\+E\+X\+\_\+\+R\+E\+P\+E\+AT@{L\+E\+X\+\_\+\+R\+E\+P\+E\+AT}!lex\+\_\+analyzer.\+h@{lex\+\_\+analyzer.\+h}}\index{lex\+\_\+analyzer.\+h@{lex\+\_\+analyzer.\+h}!L\+E\+X\+\_\+\+R\+E\+P\+E\+AT@{L\+E\+X\+\_\+\+R\+E\+P\+E\+AT}}\item[{\em 
+L\+E\+X\+\_\+\+R\+E\+P\+E\+AT\hypertarget{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27da8728f290f3c402de5b10658369ff8b12}{}\label{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27da8728f290f3c402de5b10658369ff8b12}
+}]Lexeme \textquotesingle{}\{,m\}\textquotesingle{}. \index{L\+E\+X\+\_\+\+L\+A\+Z\+Y\+\_\+\+C\+O\+PY@{L\+E\+X\+\_\+\+L\+A\+Z\+Y\+\_\+\+C\+O\+PY}!lex\+\_\+analyzer.\+h@{lex\+\_\+analyzer.\+h}}\index{lex\+\_\+analyzer.\+h@{lex\+\_\+analyzer.\+h}!L\+E\+X\+\_\+\+L\+A\+Z\+Y\+\_\+\+C\+O\+PY@{L\+E\+X\+\_\+\+L\+A\+Z\+Y\+\_\+\+C\+O\+PY}}\item[{\em 
+L\+E\+X\+\_\+\+L\+A\+Z\+Y\+\_\+\+C\+O\+PY\hypertarget{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27da3171f1f2958f54559f2570690b951b74}{}\label{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27da3171f1f2958f54559f2570690b951b74}
+}]Lexeme \textquotesingle{}+?\textquotesingle{}. \index{L\+E\+X\+\_\+\+C\+O\+N\+C\+AT@{L\+E\+X\+\_\+\+C\+O\+N\+C\+AT}!lex\+\_\+analyzer.\+h@{lex\+\_\+analyzer.\+h}}\index{lex\+\_\+analyzer.\+h@{lex\+\_\+analyzer.\+h}!L\+E\+X\+\_\+\+C\+O\+N\+C\+AT@{L\+E\+X\+\_\+\+C\+O\+N\+C\+AT}}\item[{\em 
+L\+E\+X\+\_\+\+C\+O\+N\+C\+AT\hypertarget{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27daf0879f9dc8d6e407df499ea3ecb1814f}{}\label{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27daf0879f9dc8d6e407df499ea3ecb1814f}
+}]Lexeme of concatenation. \index{L\+E\+X\+\_\+\+F\+IN@{L\+E\+X\+\_\+\+F\+IN}!lex\+\_\+analyzer.\+h@{lex\+\_\+analyzer.\+h}}\index{lex\+\_\+analyzer.\+h@{lex\+\_\+analyzer.\+h}!L\+E\+X\+\_\+\+F\+IN@{L\+E\+X\+\_\+\+F\+IN}}\item[{\em 
+L\+E\+X\+\_\+\+F\+IN\hypertarget{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27dab9722c0c15b2be4097380b5b72bde41a}{}\label{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27dab9722c0c15b2be4097380b5b72bde41a}
+}]Final lexeme. \end{description}
+\end{Desc}

@@ -1,0 +1,103 @@
+\hypertarget{class_lex}{}\section{Lex Class Reference}
+\label{class_lex}\index{Lex@{Lex}}
+
+
+Lexeme with all information.  
+
+
+
+
+{\ttfamily \#include $<$lex\+\_\+analyzer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_lex_af5c125b9b27809443e723373d39a0dd8}{Lex} (\hyperlink{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27d}{type\+\_\+of\+\_\+lex} t=\hyperlink{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27da292df6cba995f99f45847b05772ed297}{L\+E\+X\+\_\+\+N\+U\+LL}, string info=\char`\"{}\char`\"{}, int k=0)
+\item 
+\hyperlink{lex__analyzer_8h_ace23631822b7d5734df5055ab6a9b27d}{type\+\_\+of\+\_\+lex} \hyperlink{class_lex_a066448bfe205306722084723bb6e9cbf}{get\+\_\+type} () const 
+\item 
+string \hyperlink{class_lex_a9960d24508ea04e102661f5035c7c6ba}{get\+\_\+info} () const 
+\item 
+int \hyperlink{class_lex_a58274b3d661ac96e41311642b362e8ae}{get\+\_\+m} () const 
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{class_lex_aa4e3112dea3e781e04a3940762f963b4}{operator$<$$<$} (ostream \&os, const \hyperlink{class_lex}{Lex} \&lx)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Lexeme with all information. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Lex@{Lex}!Lex@{Lex}}
+\index{Lex@{Lex}!Lex@{Lex}}
+\subsubsection[{\texorpdfstring{Lex(type\+\_\+of\+\_\+lex t=\+L\+E\+X\+\_\+\+N\+U\+L\+L, string info="""", int k=0)}{Lex(type_of_lex t=LEX_NULL, string info="", int k=0)}}]{\setlength{\rightskip}{0pt plus 5cm}Lex\+::\+Lex (
+\begin{DoxyParamCaption}
+\item[{{\bf type\+\_\+of\+\_\+lex}}]{t = {\ttfamily {\bf L\+E\+X\+\_\+\+N\+U\+LL}}, }
+\item[{string}]{info = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{int}]{k = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_lex_af5c125b9b27809443e723373d39a0dd8}{}\label{class_lex_af5c125b9b27809443e723373d39a0dd8}
+Constructor of class of lexemes 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em t} & Type of lexeme \\
+\hline
+\mbox{\tt in}  & {\em info} & Lexeme\textquotesingle{}s data (for no terminals = \char`\"{}\char`\"{}) \\
+\hline
+\mbox{\tt in}  & {\em k} & Count of repeatition (for no repeatition = 0) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Lex@{Lex}!get\+\_\+info@{get\+\_\+info}}
+\index{get\+\_\+info@{get\+\_\+info}!Lex@{Lex}}
+\subsubsection[{\texorpdfstring{get\+\_\+info() const }{get_info() const }}]{\setlength{\rightskip}{0pt plus 5cm}string Lex\+::get\+\_\+info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_lex_a9960d24508ea04e102661f5035c7c6ba}{}\label{class_lex_a9960d24508ea04e102661f5035c7c6ba}
+Getting string with terminals \begin{DoxyReturn}{Returns}
+String with terminals 
+\end{DoxyReturn}
+\index{Lex@{Lex}!get\+\_\+m@{get\+\_\+m}}
+\index{get\+\_\+m@{get\+\_\+m}!Lex@{Lex}}
+\subsubsection[{\texorpdfstring{get\+\_\+m() const }{get_m() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Lex\+::get\+\_\+m (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_lex_a58274b3d661ac96e41311642b362e8ae}{}\label{class_lex_a58274b3d661ac96e41311642b362e8ae}
+Getting count of repeatition \begin{DoxyReturn}{Returns}
+Count of repeatition 
+\end{DoxyReturn}
+\index{Lex@{Lex}!get\+\_\+type@{get\+\_\+type}}
+\index{get\+\_\+type@{get\+\_\+type}!Lex@{Lex}}
+\subsubsection[{\texorpdfstring{get\+\_\+type() const }{get_type() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type\+\_\+of\+\_\+lex} Lex\+::get\+\_\+type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_lex_a066448bfe205306722084723bb6e9cbf}{}\label{class_lex_a066448bfe205306722084723bb6e9cbf}
+Getting type of lexeme \begin{DoxyReturn}{Returns}
+Type of lexeme 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{Lex@{Lex}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Lex@{Lex}}
+\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{os, }
+\item[{const {\bf Lex} \&}]{lx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_lex_aa4e3112dea3e781e04a3940762f963b4}{}\label{class_lex_aa4e3112dea3e781e04a3940762f963b4}
+Print lexeme to stream \begin{DoxyReturn}{Returns}
+Link to stream 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{lex__analyzer_8h}{lex\+\_\+analyzer.\+h}\end{DoxyCompactItemize}
